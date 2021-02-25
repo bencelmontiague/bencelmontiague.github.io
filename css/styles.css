@@ -8,6 +8,30 @@ body.active{overflow:hidden;z-index:-1}
 .no-js #our-process-timeline>div p{color:#74808a;font-size:0.9em;margin:0}
 .no-js #our-process-timeline:before,.no-js #our-process-timeline:after{content:none}
 
+.navbar {
+    position:absolute;top:0;
+    left:0;
+    right:0;
+    z-index:10;
+    /* animation-name:dropHeader;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-duration:0.75s */
+}
+.navbar-brand {
+    margin-left: 25px;
+    color: #fff;
+}
+.nav-link{
+    display:block;
+    color:#ffffff;
+    padding:15px;
+    margin-right: 20px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+}
+.nav-link:hover{color:#5c9eca;text-decoration:none;}
+
 @keyframes dropHeader{
     0%{
         transform:translateY(-100%)}
@@ -29,22 +53,9 @@ body.active{overflow:hidden;z-index:-1}
     header li{
         display:inline-block;
     }
-    header .navbar-brand {
-        margin-left: 25px;
-        color: #fff;
-    }
-    header .nav-link{
-        display:block;
-        color:#ffffff;
-        padding:15px;
-        margin-right: 20px;
-        letter-spacing: 0.10em;
-        text-transform: uppercase;
-    }
-    header .nav-link:hover{color:#5c9eca;text-decoration:none;}
     header.active{display:block}
     header.sticky{position:fixed;z-index:999}
-    #menu.active{
+    /* #menu.active{
         display:block;
     }
     #mobile-menu-open{
@@ -52,7 +63,7 @@ body.active{overflow:hidden;z-index:-1}
     }
     #mobile-menu-close{display:none;text-align:right;width:100%;background:#fff;font-size:1.5em;padding-right:15px;padding-top:10px;cursor:pointer;color:#3498db}
     #mobile-menu-close span{font-size:0.5em;text-transform:uppercase}
-    #mobile-menu-close i{vertical-align:middle}
+    #mobile-menu-close i{vertical-align:middle} */
     footer{padding:50px 0}
     .copyright{padding-top:20px}
     .copyright p{margin:0;color:#74808a}
@@ -204,9 +215,9 @@ body.active{overflow:hidden;z-index:-1}
     
 @media only screen and (max-width: 768px){
     header{position:fixed;display:none;z-index:999;animation:none;bottom:0;height:100%}
-    #mobile-menu-open,#mobile-menu-close{display:block}
+    /* #mobile-menu-open,#mobile-menu-close{display:block}
     #menu{height:100%;overflow-y:auto;box-shadow:none;border-radius:0;width:100%}
-    #menu li{display:block;margin-bottom:10px}
+    #menu li{display:block;margin-bottom:10px} */
     #lead-content h1{font-size:2em}
     #lead-content h2{font-size:1.3em}
     #lead-content a{padding:10px 20px}
